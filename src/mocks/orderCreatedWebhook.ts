@@ -3,8 +3,7 @@ export const ORDER_CREATED_WEBHOOK = {
     type: "order.notification",
     order: {
         id: 253537830,
-        status: "CREATED",
-        provider_id: "GX02137Uso",
+        restaurant_id: "GX02137Uso",
     },
     created_at: "2025-08-17T18:01:25.529Z"
 }

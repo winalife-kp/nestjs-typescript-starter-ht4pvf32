@@ -1,28 +1,18 @@
-export enum WebhookOrderStatusEnum {
-  CREATED = 'CREATED',
-  PRODUCTION = 'PRODUCTION',
-  READY = 'READY',
-  DELIVERED = 'DELIVERED',
-  CANCELED = 'CANCELED',
-}
-
 export interface OrderWebhookBody {
   id: string;
-  type: 'ORDER_NOTIFICATION'
+  type: string;
   order: {
-    id: string;
-    venue_id: string;
-    status: WebhookOrderStatusEnum;
-    resource_url: string;
+    id: number;
+    restaurant_id: string;
   };
   created_at: string;
 }
 
 export interface ChannelOrderInterface {
   /**
-   * Your provider id
+   * Your restaurant id
    */
-  provider_id: string;
+  restaurant_id: string;
 
   /**
    * Order ID (e.g. 6934759)

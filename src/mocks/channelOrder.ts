@@ -3,7 +3,7 @@
 import { ChannelOrderInterface } from "src/types/channel";
 
 export const CHANNEL_ORDER: ChannelOrderInterface = {
-  provider_id: 'GX02137Uso',
+  restaurant_id: 'GX02137Uso',
   order_id: 253537830,
   order_reference_id: 'NUKZ8',
   order_type: 'delivery',
