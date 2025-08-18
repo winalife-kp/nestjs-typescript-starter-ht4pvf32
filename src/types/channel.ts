@@ -98,18 +98,6 @@ export interface ChannelUserInfoInterface {
   last_name?: string;
   phone?: string;
   email?: string;
-  address_info?: {
-    address?: string;
-    apartment?: string;
-    city?: string;
-    country?: string;
-    note_for_courier?: string;
-    postal_code?: string;
-    coordinates?: {
-      lat: number;
-      lng: number;
-    };
-  }
 
   /**
    * VAT tax code mentioned by the eater

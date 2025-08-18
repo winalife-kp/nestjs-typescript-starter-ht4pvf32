@@ -16,7 +16,6 @@ export const CHANNEL_ORDER: ChannelOrderInterface = {
     partial_name: 'Volodymyr S.',
     partial_phone: '********4584',
     phone: '+48800454584',
-    address_info: {},
   },
   items: [
     {
