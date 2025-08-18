@@ -15,6 +15,8 @@ export const CHANNEL_ORDER: ChannelOrderInterface = {
     user_id: '9b090628-fe6a-4d1e-9678-283cabbcad4c',
     partial_name: 'Volodymyr S.',
     partial_phone: '********4584',
+    first_name: 'Volodymyr',
+    last_name: 'Shevchenko',
     phone: '+48800454584',
   },
   items: [
