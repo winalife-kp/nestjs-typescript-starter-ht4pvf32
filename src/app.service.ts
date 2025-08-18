@@ -5,7 +5,7 @@ import { OrderWebhookBody } from './types/channel';
 export class AppService {
   constructor() {}
   
-  async handleNewOrder(webhookBody: OrderWebhookBody) {
+  async handleNewOrder(webhookBody: OrderWebhookBody): Promise<void> {
     // retrieve order
     // parse order to dto
     // send dto to kafka queue
