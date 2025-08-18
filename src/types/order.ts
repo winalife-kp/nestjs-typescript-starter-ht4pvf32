@@ -28,10 +28,6 @@ export class OrderDto {
 
     @IsInt()
     @Min(0)
-    subTotal: number;
-
-    @IsInt()
-    @Min(0)
     total: number;
 
     @IsOptional()
