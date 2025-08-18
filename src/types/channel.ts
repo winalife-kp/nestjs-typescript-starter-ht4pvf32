@@ -23,9 +23,9 @@ export interface ChannelOrderInterface {
   /**
    * Order reference (e.g. "5v7SHW")
    *
-   * You will find this reference in various reports from Bolt Food.
+   * You will find this reference in various reports from Channel.
    * We send this just for info purposes (you can use it to correlate the data in your system
-   * with other reports you may get from Bolt)
+   * with other reports you may get from Channel)
    */
   order_reference_id: string;
 
