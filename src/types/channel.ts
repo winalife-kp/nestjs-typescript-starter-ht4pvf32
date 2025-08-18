@@ -64,34 +64,6 @@ export interface ChannelOrderInterface {
    * The cost the client is paying for food only
    */
   total_order_price: ChannelPriceInterface;
-
-  /**
-   * The cost the client is paying for delivery service
-   */
-  delivery_fee?: ChannelPriceInterface;
-
-  /**
-   * Extra charge applied to the client when the cost of the
-   * order (total_order_price) is less than a minimum order values
-   */
-  small_order_fee?: ChannelPriceInterface;
-
-  /**
-   * Extra charge only for OWN_DELIVERY orders.
-   */
-  service_fee?: ChannelPriceInterface;
-
-  /**
-   * Customer note for the order.
-   */
-  user_note?: string;
-
-  /**
-   * The timestamp when the courier will arrive to pickup the order in UNIX timestamp. (this
-   * field is only enabled for integrators which have the Scheduled Order feature enabled)
-   * In 2P it should point to the final time of the delivery as the logic is that the courier is already at the restaurant.
-   */
-  pickup_ts?: number;
 }
 
 
