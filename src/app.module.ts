@@ -7,6 +7,6 @@ import { KafkaLibService } from './kafka.service';
 @Module({
   imports: [],
   controllers: [AppController],
-  providers: [AppService, ChannelService, KafkaLibService],
+  providers: [AppService],
 })
 export class AppModule {}
