@@ -21,34 +21,15 @@ export interface ChannelOrderInterface {
   order_id: number;
 
   /**
-   * Order reference (e.g. "5v7SHW")
-   *
-   * You will find this reference in various reports from Channel.
-   * We send this just for info purposes (you can use it to correlate the data in your system
-   * with other reports you may get from Channel)
-   */
-  order_reference_id: string;
-
-  /**
    *  Order type (takeaway, delivery, own delivery)
    */
   order_type: 'delivery' | 'pickup' | 'own_delivery';
 
   /**
-   * Order creation timestamp, in 2 formats:
-   * - created_ts: UNIX timestamp (seconds since Epoch)
-   * - created_datetime: ISO datetime in restaurant's timezone
-   */
-  created_ts: number;
-  created_datetime: string;
-
-  /**
    * Timestamp when the order needs to be ready for pickup:
-   * - due_ts: UNIX timestamp (seconds since Epoch)
-   * - due_datetime: ISO datetime in restaurant's timezone
+   * - pickup_datetime: ISO datetime in restaurant's timezone
    */
-  due_ts: number;
-  due_datetime: string;
+  pickup_datetime: string;
 
   /**
    * Customer info

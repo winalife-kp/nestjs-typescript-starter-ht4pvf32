@@ -3,10 +3,10 @@ import { OrderDto } from "./types/order";
 import { Observable, of } from "rxjs";
 
 @Injectable()
-export class KafkaLibService {
-  emitOrderCreateRequestEvent(order: OrderDto): Observable<void> {
+export class KafkaService {
+  emitOrderCreateEvent(order: OrderDto): Observable<OrderDto> {
     Logger.log(`Emit order: ${JSON.stringify(order)}`);
-    return of();
+    return of(order);
   }
 
 }

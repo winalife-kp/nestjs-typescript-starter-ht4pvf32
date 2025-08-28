@@ -23,9 +23,6 @@ export class OrderDto {
     @IsString()
     externalId: string;
 
-    @IsString()
-    pickupCode: string;
-
     @IsInt()
     @Min(0)
     total: number;
@@ -40,9 +37,6 @@ export class OrderDto {
 
     @IsUUID(4)
     restaurantId: string;
-
-    @IsDateString()
-    placedAt: string;
 
     @IsDateString()
     pickupTime: string;
