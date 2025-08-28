@@ -1,6 +1,4 @@
-// https://developer.bolt.eu/delivery/main/#tag/Order-integration-Partner-Webhooks/operation/post-sendNewOrder
-
-import { ChannelOrderInterface } from "src/types/channel";
+import { ChannelOrderInterface } from "../types/channel";
 
 export const CHANNEL_ORDER: ChannelOrderInterface = {
   restaurant_id: 'GX02137Uso',
