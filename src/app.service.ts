@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { OrderWebhookBody } from './types/channel';
+import { WoltWebhookBody } from './types/wolt';
 
 @Injectable()
 export class AppService {
   constructor() {}
   
-  async handleNewOrder(webhookBody: OrderWebhookBody): Promise<void> {
+  async handleNewOrder(woltWebhookBody: WoltWebhookBody): Promise<void> {
     // 1. retrieve order details using injected ChannelService
 
 
@@ -14,6 +14,6 @@ export class AppService {
 
     // 3. send dto to kafka queue using injected KafkaService
 
-    
+
   }
 }

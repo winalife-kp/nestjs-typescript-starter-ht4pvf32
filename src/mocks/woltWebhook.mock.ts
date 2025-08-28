@@ -1,4 +1,4 @@
-export const ORDER_CREATED_WEBHOOK = {
+export const WOLT_WEBHOOK_MOCK = {
     id: "68a218f54345a8b091187fe9",
     type: "order.notification",
     order: {

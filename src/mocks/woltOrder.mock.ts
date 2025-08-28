@@ -1,6 +1,6 @@
-import { ChannelOrderInterface } from "../types/channel";
+import { WoltOrder } from "../types/wolt";
 
-export const CHANNEL_ORDER: ChannelOrderInterface = {
+export const WOLT_ORDER_MOCK: WoltOrder = {
   restaurant_id: 'GX02137Uso',
   order_id: 253537830,
   order_type: 'delivery',

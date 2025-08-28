@@ -1,4 +1,4 @@
-export interface OrderWebhookBody {
+export interface WoltWebhookBody {
   id: string;
   type: string;
   order: {
@@ -8,7 +8,7 @@ export interface OrderWebhookBody {
   created_at: string;
 }
 
-export interface ChannelOrderInterface {
+export interface WoltOrder {
   /**
    * Your restaurant id
    */
